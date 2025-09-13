@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Interactive Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎮 JavaScript Interactivity Demo</h1>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Game -->
+    <section>
+      <h2>Counter Game</h2>
+      <button id="increaseBtn">➕ Increase</button>
+      <button id="decreaseBtn">➖ Decrease</button>
+      <p>Current Count: <span id="counter">0</span></p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+      <h2>FAQ</h2>
+      <div class="faq">
+        <button class="faq-question">What is this project?</button>
+        <p class="faq-answer">It’s a JavaScript practice project with events, interactivity, and form validation.</p>
+      </div>
+      <div class="faq">
+        <button class="faq-question">How does the dark mode work?</button>
+        <p class="faq-answer">It toggles a class on the body to change background and text colors.</p>
+      </div>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form id="signupForm">
+        <label>Name: <input type="text" id="name" /></label>
+        <small class="error" id="nameError"></small><br>
+
+        <label>Email: <input type="text" id="email" /></label>
+        <small class="error" id="emailError"></small><br>
+
+        <label>Password: <input type="password" id="password" /></label>
+        <small class="error" id="passwordError"></small><br>
+
+        <button type="submit">Register</button>
+      </form>
+      <p id="formSuccess"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
